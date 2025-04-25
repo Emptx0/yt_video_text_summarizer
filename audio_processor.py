@@ -15,10 +15,10 @@ class AudioProcessor:
                               device=device)
 
     def get_video_text(self, verbose=False):
-        print('\n  - (audio processor) Starting...')
         if verbose:
+            print('\n  - (audio processor) Starting...')
             start_time = time.time()
-            text = self.model('audio/audio.mp3')
+            text = self.model('audio.mp3')
 
             print('  - (audio processor) Model: openai/whisper-large-v3-turbo')
             if self.device == -1:

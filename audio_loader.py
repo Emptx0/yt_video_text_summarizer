@@ -1,4 +1,5 @@
 from pytubefix import YouTube
+import os
 
 
 class Downloader:
@@ -6,6 +7,10 @@ class Downloader:
         try:
             yt = YouTube(str(link))
             audio = yt.streams.filter(only_audio=True).first()
-            audio.download(output_path='audio', filename='audio.mp3')
+            audio.download(filename='audio.mp3')
+            return True
         except:
-            print('No video found')
+            print('Video not found!')
+
+    def __del__(self):
+        os.remove('audio.mp3')
