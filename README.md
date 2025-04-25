@@ -14,3 +14,5 @@ Use `verbose=True` in `AudioProcessor()` and `TextSummarizer()` to get more info
 ![image](https://github.com/user-attachments/assets/6e017e1e-c01b-4a73-96e8-ad1741355786)
 ### Requirements
 `pip install -r requirements.txt`
+### Jupyter notebook
+Prototype here: [yt_video_text_summarizer_notebook](https://github.com/Emptx0/yt_video_text_summarizer_notebook).
