@@ -14,7 +14,7 @@ class TextSummarizer:
     def __init__(self, text, verbose=False):
         if verbose:
             self.start_time = time.time()
-            print('\n  - (nlp model) Starting...')
+            print('  - (nlp model) Starting...')
 
         self.verbose = verbose
 
@@ -83,8 +83,10 @@ class TextSummarizer:
         sentence_scores_df.reset_index(inplace=True)
 
         if self.verbose:
-            print(f'  - (nlp model) Word scores: \n    {word_scores_df}\n')
-            print(f'  - (nlp model) Sentence scores: \n    {sentence_scores_df}\n')
+            print(f'  - (nlp model) Word scores:\nShape: {word_scores_df.shape}'
+                  f'\n\n{word_scores_df.head()}\n')
+            print(f'  - (nlp model) Sentence scores:\nShape: {sentence_scores_df.shape}'
+                  f'\n\n{sentence_scores_df.head()}\n')
 
         return word_scores_df, sentence_scores_df
 
