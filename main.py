@@ -10,7 +10,7 @@ if __name__ == '__main__':
             break
 
     processor = AudioProcessor()
-    video_text = processor.get_video_text(verbose=True)
+    video_text = processor.get_video_text()
 
-    summarizer = TextSummarizer(video_text, verbose=True)
+    summarizer = TextSummarizer(video_text)
     summarizer.get_summary()

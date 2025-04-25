@@ -1,5 +1,6 @@
 import time
 import string
+import textwrap
 
 import nltk
 from nltk.corpus import stopwords
@@ -100,6 +101,6 @@ class TextSummarizer:
         if self.verbose:
             print(f'  - (nlp model) Running for {(time.time() - self.start_time):.2f} seconds\n')
 
-        print(f'Video text:\n{self.text}\n')
-        print(f'Summary:\n{summary}\n')
-        print(f'Keywords:\n{keywords}\n')
+        print(f'Video text:\n{textwrap.fill(self.text, width=60)}\n')
+        print(f'Summary:\n{textwrap.fill(summary, width=60)}\n')
+        print(f'Keywords:\n{textwrap.fill(keywords, width=60)}\n')

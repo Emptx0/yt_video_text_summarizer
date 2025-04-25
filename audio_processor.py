@@ -28,7 +28,7 @@ class AudioProcessor:
             print(f'  - (audio processor) Running for {(time.time() - start_time):.2f} seconds\n')
 
         else:
-            text = self.model('audio/audio.mp3')
+            text = self.model('audio.mp3')
 
         text = text["text"]
 
