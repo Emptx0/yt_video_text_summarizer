@@ -84,9 +84,9 @@ class TextSummarizer:
         sentence_scores_df.reset_index(inplace=True)
 
         if self.verbose:
-            print(f'  - (nlp model) Word scores:\nShape: {word_scores_df.shape}'
+            print(f'  - (nlp model) Word scores:\n\nShape: {word_scores_df.shape}'
                   f'\n\n{word_scores_df.head()}\n')
-            print(f'  - (nlp model) Sentence scores:\nShape: {sentence_scores_df.shape}'
+            print(f'  - (nlp model) Sentence scores:\n\nShape: {sentence_scores_df.shape}'
                   f'\n\n{sentence_scores_df.head()}\n')
 
         return word_scores_df, sentence_scores_df

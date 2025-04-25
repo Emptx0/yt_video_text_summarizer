@@ -9,8 +9,8 @@ if __name__ == '__main__':
         if downloader(link):
             break
 
-    processor = AudioProcessor()
+    processor = AudioProcessor(verbose=True)
     video_text = processor.get_video_text()
 
-    summarizer = TextSummarizer(video_text)
+    summarizer = TextSummarizer(video_text, verbose=True)
     summarizer.get_summary()
