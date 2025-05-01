@@ -8,11 +8,11 @@ By default, Whisper runs on the CPU, but this can be changed to GPU if your grap
 **! PyTorch with CUDA support is not installed via requirements.txt !** \
 \
 [Go here](https://pytorch.org/get-started/locally/) to install PyTorch with CUDA 12.8 support.
-### Verbose
+### 📋 Verbose
 Use `verbose=True` in `AudioProcessor()` and `TextSummarizer()` to get more information. \
 \
 ![image](https://github.com/user-attachments/assets/6e017e1e-c01b-4a73-96e8-ad1741355786)
-### Requirements
+### ⚙️ Requirements
 `pip install -r requirements.txt`
-### Jupyter notebook
+### 📓 Jupyter notebook
 Prototype here: [yt_video_text_summarizer_notebook](https://github.com/Emptx0/yt_video_text_summarizer_notebook).
